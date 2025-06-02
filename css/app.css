@@ -1,0 +1,436 @@
+body {
+    font-family: 'Josefin Sans', sans-serif !important;
+    overflow-x: hidden;
+    /* padding: 0 !important; */
+}
+
+html,
+body {
+    touch-action: manipulation;
+}
+
+.font-esthetic {
+    font-family: Sacramento, cursive !important;
+}
+
+.font-arabic {
+    font-family: 'Noto Naskh Arabic', serif !important;
+}
+
+.img-crop {
+    width: 14rem;
+    height: 14rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.img-crop>img {
+    display: inline;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+}
+
+.btn-music {
+    position: fixed;
+    bottom: 9vh !important;
+    right: 2vh !important;
+    z-index: 1055 !important;
+    margin-bottom: 20px;
+    background-color: #549bf9;
+    color: #d0f2ff;
+    /* Add margin bottom */
+}
+
+.custom-button {
+    background-color: #549bf9;
+    border-color: #549bf9;
+    color: #d0f2ff;
+}
+
+.custom-button:hover {
+    background-color: #549bf9;
+    border-color: #549bf9;
+    color: #d0f2ff;
+    opacity: 80%;
+}
+
+.btn-theme {
+    position: fixed;
+    bottom: 15vh !important;
+    right: 2vh !important;
+    z-index: 1055 !important;
+}
+
+.loading-page {
+    position: fixed;
+    inset: 0 !important;
+    width: 100%;
+    height: 100%;
+    z-index: 1056 !important;
+}
+
+.card-comment-body {
+    overflow-wrap: break-word !important;
+}
+
+.mouse-animation {
+    padding: 0.25rem 0.625rem;
+    height: 2rem;
+    border-radius: 1.4rem;
+    opacity: 0.75;
+    border: 2px solid #549bf9;
+    box-sizing: content-box;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+}
+
+.mouse-animation>.scroll-animation {
+    width: 0.25rem;
+    height: 0.625rem;
+    border-radius: 25%;
+    background-color: #3a3a3a;
+    animation-name: scroll;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin-icon {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spin-button {
+    animation: spin-icon 5s linear infinite;
+}
+
+@keyframes love {
+    50% {
+        transform: translateY(1rem);
+    }
+}
+
+.animate-love {
+    color: #d0f2ff;
+    animation: love 5s ease-in-out infinite;
+}
+
+.animate-dark {
+    color: #549bf9;
+    animation: love 5s ease-in-out infinite;
+}
+
+.dark-section {
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+}
+
+footer {
+    margin-top: -0.5rem;
+    padding-bottom: 4rem;
+}
+
+.bg-theme-primary {
+    background-color: #f6fefe;
+}
+
+.bg-theme-secondary {
+    background-color: #d0f2ff;
+}
+
+.bg-theme-secondary {
+    background-color: #d0f2ff;
+}
+
+.color-theme-white {
+    color: white;
+}
+
+.color-theme-black {
+    color: black;
+    background-color: #212529;
+}
+
+.color-theme-secondary {
+    color: #f6fefe;
+    background-color: #d0f2ff;
+}
+
+.navbar {
+    background-color: #549bf9;
+    border-top-left-radius: 20px;
+    /* Rounded corners */
+    border-top-right-radius: 20px;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.text-dark {
+    color: #549bf9;
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: space-around;
+    /* Adjust alignment as needed */
+}
+
+.nav-item {
+    margin: 0 10px;
+    /* Adjust horizontal spacing between items */
+}
+
+.nav-link {
+    color: #fff;
+    text-align: center;
+    display: block;
+    padding: .5rem 0;
+    cursor: pointer;
+    /* Add cursor pointer for clickable effect */
+}
+
+.nav-link i {
+    font-size: 24px;
+}
+
+.nav-link span {
+    display: block;
+    font-size: 12px;
+}
+
+.navbar-nav .active .nav-link {
+    color: #f8f9fa !important;
+}
+
+/* Active State Styling */
+.active .nav-link {
+    color: #f8f9fa !important;
+}
+
+.gallery-item {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 15px;
+    /* Margin bottom for spacing */
+}
+
+.gallery-item img {
+    border-radius: 15px;
+    /* Border radius for gallery items */
+}
+
+.gallery-item.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.section {
+    padding: 60px 0;
+    /* Add some padding for spacing */
+    min-height: calc(100vh - 56px);
+    /* Ensure sections are full height */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.custom-card-comment {
+    border: 1px solid #549bf9;
+    border-radius: 1rem;
+    width: 100%;
+    /* Set to full width */
+    /* max-width: 450px; */
+    /* Optional: set a max-width for larger screens */
+    margin: 0 auto;
+    /* Center the card-comment horizontally */
+}
+
+.custom-card-comment-comment {
+    border: 1px solid #549bf9;
+    border-radius: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f6fefe;
+    /* Center the card-comment horizontally */
+}
+
+.galery-card-comment {
+    border: 1px solid #549bf9;
+    border-radius: 1rem;
+    width: 100%;
+    /* Set to full width */
+    /* max-width: 450px; */
+    /* Optional: set a max-width for larger screens */
+    margin: 0 auto;
+    /* Center the card-comment horizontally */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+    .custom-card-comment {
+        width: 100%;
+        /* Full width on mobile */
+    }
+}
+
+.welcome-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #c8e0ff;
+    /* background: rgba(0, 0, 0, 0.7); */
+    /* Semi-transparent overlay */
+    z-index: 1;
+    /* Ensure the overlay is above the background image but below the content */
+}
+
+.welcome-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: transform 0.5s ease;
+    /* background: url('./../assets/images/welcome_large.jpeg') no-repeat center center/cover; */
+    /* Set background image */
+}
+
+/* Background for mobile version */
+@media (max-width: 767px) {
+    .welcome-page {
+        /* background: url('./../assets/images/welcome_small.jpeg') no-repeat center center/cover; */
+    }
+}
+
+.welcome-content {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+
+}
+
+.original-content {
+    display: none;
+    opacity: 0;
+    /* Start with opacity 0 for fade-in effect */
+    transition: opacity 2.0s ease;
+    /* Transition effect for fade-in */
+}
+
+.slide-up {
+    transform: translateY(-100%);
+}
+
+.fade-in {
+    opacity: 1;
+    /* Final opacity for fade-in effect */
+}
+
+.animated-horizontal-item,
+.animated-vertical-item {
+    opacity: 0;
+    /* width: 300px;
+    height: 200px;
+    background-color: lightgray; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* font-size: 24px; */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    /* Default duration */
+}
+
+.animated-horizontal-item[data-direction="left"] {
+    transform: translateX(-20%);
+}
+
+.animated-horizontal-item[data-direction="right"] {
+    transform: translateX(20%);
+}
+
+.animated-vertical-item[data-direction="top"] {
+    transform: translateY(-40%);
+}
+
+.animated-vertical-item[data-direction="bottom"] {
+    transform: translateY(40%);
+}
+
+.animated-horizontal-item.visible,
+.animated-vertical-item.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+
+/* COMMENT CARD */
+
+.list-container {
+    background-color: #f6fefe;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 400px;
+    /* Fixed height */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    padding: 15px;
+}
+
+.card-comment-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-comment {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    border: 1px solid #d0f2ff;
+    border-radius: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    transition: transform 0.2s;
+    /* text-align: left; */
+}
